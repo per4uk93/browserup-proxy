@@ -47,6 +47,7 @@ abstract class WithRunningProxyRestTest {
     abstract String getUrlPath();
 
     String getFullUrlPath() {
+        new File().listFiles()
         return "/proxy/${proxy.port}/${urlPath}"
     }
 
